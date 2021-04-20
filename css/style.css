@@ -1,7 +1,18 @@
-p {
-    color:blue;
-    background-color: darkgray;
-}
-header {
-    background-color: chartreuse;
-}
+.container {
+    display: block;
+    background-color: rgb(230, 205, 205);
+    color: rgb(8, 8, 7);
+     
+  }
+  h1 { text-align: center;
+  }
+  .row-2 {
+      text-align:left;
+  }
+  #forms {
+      align:left;
+  }
+
+ 
+
+ 
