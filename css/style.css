@@ -1,4 +1,8 @@
-.container {
+html { background-color: darkblue;
+    background-color: coral;
+    background-image:
+}
+.container-fluid {
     display: block;
     background-color: rgb(230, 205, 205);
     color: rgb(8, 8, 7);
@@ -9,7 +13,15 @@
   .row-2 {
       text-align:left;
   }
- 
+  
+
+
+    main {
+        
+
+    }
+
+   
 
  
 
