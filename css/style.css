@@ -1,7 +1,12 @@
+html { background-color: darkblue;
+    background-color: rgb(22, 19, 18);
+    background-image:
+}
 .container {
     display: block;
-    background-color: rgb(230, 205, 205);
+    
     color: rgb(8, 8, 7);
+    justify-content: flex-start;
      
   }
   h1 { text-align: center;
@@ -9,7 +14,15 @@
   .row-2 {
       text-align:left;
   }
- 
+  
+
+
+    
+        
+
+    }
+
+   
 
  
 
