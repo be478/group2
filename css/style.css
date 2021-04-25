@@ -12,6 +12,10 @@ html { background-color: darkblue;
   h1 { text-align: center;
   }
   
+  .card-body {
+      background-color: black;
+      color:blanchedalmond;
+  }
 
    
 
