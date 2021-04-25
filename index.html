@@ -1,149 +1,90 @@
 <!doctype html>
 <html lang="en">
-    <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style.css" type="text/css">
-      <title>Final Project</title>
-    </head>
-    <body>
-      <div class="container">
-        
-        <main  class="p-3 mb-2 bg-info text-white">
-          <!-- Task header  -->
-        <header>
-          <h1>Task List</h1>  
-        </header>
-          <h3>Add New Task</h3>
-         <!-- Task list  -->
-        <form>
-          <div class="form-group col-md-3">
-            <label for="taskName" >Task Name </label>
-            <input type="text" class="form-control" id="taskName">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Final Project</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <main class="p-3 mb-2 bg-info text-white">
+      <!-- Task header  -->
+      <header>
+        <h1>Task List</h1>
+      </header>
+      <h3>Add New Task</h3>
+      <!-- Task list  -->
+      <form>
+        <div class="form-group col-md-3">
+          <label for="taskName">Task Name </label>
+          <input type="text" class="form-control" id="taskName">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="description"> Task Description</label>
+          <div class="col-9">
+            <textarea class="form-control" id="newDescriptionInput" rows="3"></textarea>
           </div>
-          <div class="form-group col-md-4">
-            <label for="description" > Task Description</label>
-            <div class="col-9">
-              <textarea class="form-control" id="newDescriptionInput" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="form-group col-md-3">
-            <label for="assignTo" >Assign to: </label>
-            <input type="text" class="form-control" id="assignTo">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="example-date-input">Due Date</label>
-       <input class="form-control" type="date" value="2021-02-19" id="newDueDateInput">
-            </div>
-            <div class="form-group col-md-3"> 
-              <button type="button" class="btn btn-secondary">Add</button>
-            </div>
-          </div>
-            </div>
-          </div>
-            </div>
-          </div>
-       </form> 
-       </div>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="assignTo">Assign to: </label>
+          <input type="text" class="form-control" id="assignTo">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="date">Due Date</label>
+          <input class="form-control" type="date" value="#" id="date">
+        </div>
+        <div class="form-group col-md-3">
+          <button type="button" class="btn btn-secondary">Add Tasks</button>
+        </div>
+
+      </form>
+  </div>
 
 
-<!-- card list group  -->
-  
-        <div class= "container-2">
-          <div class="list-group">
-            <div class="card" style="width: 18rem ">
-              <div class="card-body">
-                            <h5>Task1</h5>
-                            <h6>Task2 Description</h6>
-                            <h6>selam kore</h6>
-                            <h6>Due Date:4/19/2021</h6>
-                            <a href="#" class="btn btn-success btn-sm">DONE</a>
-                            <a href="#" class="btn btn-primary">Delete</a>
-                          </div>
-                    </div>
-            </div>
-                        <br>
-             <div class="list-group">
-            <div class="card" style="width: 18rem ">
-              <div class="card-body">
-                <h5>Task2</h5>
-                <h6>Task2 Description</h6>
-                <h6>selam kore</h6>
-                <h6>Due Date:4/20/2021</h6>
-                            <a href="#" class="btn btn-success btn-sm">DONE</a>
-                            <a href="#" class="btn btn-primary">Delete</a>
-                          </div>
-                    </div>
-            </div>
-                        <br>
-                                    
-                         <div class="list-group">
-            <div class="card" style="width: 18rem ">
-              <div class="card-body">
-                <h5>Task3</h5>
-                <h6>Task3 Description</h6>
-                <h6>selam kore</h6>
-                <h6>Due Date:5/15/2021</h6>
-                            <a href="#" class="btn btn-primary btn-sm">IN PROGRES</a>
-                            <a href="#" class="btn btn-primary">Delete</a>
-                          </div>
-                    </div>
-            </div>
-                        <br>
-                        <div class="list-group">
-                          <div class="card" style="width: 18rem ">
-                        <div class="d-flex w-100 justify-content-between"></div>
-                            <div class="card-body">
-                              <h5>Task4</h5>
-                              <h6>Task4 Description</h6>
-                              <h6>selam kore</h6>
-                              <h6>Due Date:5/20/2021</h6>
-                              <a href="#" class="btn btn-warning btn-sm">PENDING</a>
-                              <a href="#" class="btn btn-primary">Delete</a>
-                            </div>
-                          </div>
-                        </div>
-                        <br>
-                        <div class="list-group">
-                          <div class="card" style="width: 18rem ">
-                            <div class="card-body">
-                              <h5>Task5</h5>
-                              <h6>Task1 Description</h6>
-                              <h6>selam kore</h6>
-                              <h6>Due Date:5/23/2021</h6>
-                                          <a href="#" class="btn btn-primary btn-sm">IN PROGRES</a>
-                                          <a href="#" class="btn btn-primary">Delete</a>
-                                        </div>
-                                  </div>
-                          </div>
-                                      
-                      </div>
-                      
-                    </div>
-                  
-                  </div>
-                 
-                </div>
-                
-              </div>
+  <!-- card list group  -->
+
+  <div class="container-2">
+    <div class="list-group">
+      <div class="card" style="width: 18rem ">
+        <div class="card-body">
+          <h5>Tasks</h5>
+          <p>Name</p>
+          <p>Description</p>
+          <p>AssignedTo</p>
+          <p>DueDate</p>
+          <p>Status</p>
+          <a href="#" class="btn btn-success btn-sm">status</a>
+
+        </div>
       </div>
-        
-              </main>
-              </div>
-              
->>>>>>> selamg2
+    </div>
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </div>
 
-      <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+
+  </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
       -->
-    </body>
+</body>
+
 </html>
-    
