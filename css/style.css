@@ -1,22 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+   
+}
 html { background-color: darkblue;
     background-color: rgb(22, 19, 18);
     background-image:
 }
 .container {
     display: block;
-    
+    padding: 30px 0px;
     color: rgb(8, 8, 7);
     justify-content: flex-start;
      
   }
-  h1 { text-align: center;
+ 
+  h1 { 
+    font-weight: 900;
+    font-size: 34px ;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .form {
+      font-size: 18px;
   }
   
   .card-body {
       background-color: black;
       color:blanchedalmond;
   }
-
+.h5 {
+    text-align: center;
+}
    
 
  
