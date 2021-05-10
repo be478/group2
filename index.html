@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -9,119 +8,73 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src="/js/index.js"></script>
   <title>Final Project</title>
-
 </head>
-
-<body>
+  <body>
       <div class="container">
-
         <main class="p-3 mb-2 bg-info text-white">
-            <!--Task header-->
+            <!-- Task header  -->
             <header>
               <h1>Task List</h1>
             </header>
             <h3>Add New Task</h3>
             <!-- Task list  -->
-            <form id="form1">
-
-              <div class="form-group col-md-5">
+            <form id="form1" onSubmit="validFormFieldInput()"  method="GET">
+              <div class="form-group col-md-4">
                 <label for="taskName">Task Name </label>
-                <input type="text" class="form-control" id="taskName" placeholder="Task name is required">
-               <div class="error-hint">plesae enter task name.</div>
+                <input type="text" class="form-control" id="taskName">
               </div>
-              <div class="form-group col-md-5">
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" placeholder="description is required./" rows="3" cols="50">
-                </textarea>
-                <div class="error-hint">please write task description.</div>
+              <div class="form-group col-md-4">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" cols="45"></textarea>
               </div>
-
-
               <div class="row">
-                <div class="form-group col-md-5">
+                <div class="form-group col-md-4">
                   <label for="assignTo">Assign to</label>
-                  <input type="text" class="form-control" id="assignTo" placeholder="Name">
-                  <div class="error-hint">please insert assign to.</div>
+                  <input type="text" class="form-control" id="assignTo">
                 </div>
-
                 <div class="form-group col-md-2 ">
-            
                 </div>
-
-                <div class="form-group col-md-4 ">
+                <div class="form-group col-md-3 ">
                   <label for="date">Due Date</label>
-                  <input type="date" name="date" class="form-control" placeholder="MM/DD/YYYY">
-                  <div class="error-hint">Select due date.</div>
+                  <input type="date" name="date" class="form-control" id="DueDate" placeholder="MM/DD/YYYY">
                 </div>
-
               </div>
               <div class="form-group col-md-3">
-                <button type="button" class="btn btn-secondary">Add Tasks</button>
+                <!-- <button type="button" class="btn btn-secondary">Add Tasks</button> -->
+              <input type="submit" value="submit">
               </div>
-
             </form>
-      
         <!-- card list group  -->
-
           <div class="list-group">
            <div> 
              <h5>Tasks</h5>
           </div> 
             <div class="card" style="width: 18rem ">
               <div class="card-body">
-               
                 <div class="row">
                   <div class="col-md-5">
-                    
+                    <p>Name</p>
                   </div>
-                  
-                  <!--to add drop down button-->
-                  <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                      Status
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Completed</a>
-                      <a class="dropdown-item" href="#">In-progress</a>
-                      <a class="dropdown-item" href="#">Pending</a>
-                      </div>
-
-                      <div class=" col-md-3">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-secondary">Edit</button>
-                          <button type="button" class="btn btn-warning">Delete</button>
-                        </div>
-                      </div>
-                  </div>               
+                  <div class=" col-md-1">
+                    <button type="button" class="btn btn-success">Status</button>
                   </div>
-                <p>Name</p>
+                </div>
                 <p>Description</p>
                 <p>AssignedTo</p>
                 <p>DueDate</p>
                 <p>Status</p>
-                
               </div>
             </div>
           </div>
-   
         </main>
       </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-        -->
-
+        <script src="index.js"></script> 
   </body>
-
 </html>
