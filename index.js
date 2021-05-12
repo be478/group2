@@ -1,34 +1,23 @@
-const taskName = document.querySelector('#taskName');
-const description = document.querySelector('#description');
-const assignTo = document.querySelector('#assignTo');
-const dueDate = document.querySelector('#DueDate');
+const taskName = document.getElementById("taskName");
+const description = document.getElementById("description");
+const assignTo = document.getElementById("assignTo");
+const dueDate = document.getElementById("dueDate");
+
+const nameSpan = document.getElementById("name-span");
+const discSpan = document.getElementById("dsc-span");
+const assignSpan = document.getElementById("asign-span");
+const dateSpan = document.getElementById("date-span");
+
 function validFormFieldInput(){
-    let errorMessages = [];
-    const taskName1 = taskName.value;
-    const description1 = description.value;
-    const assignTo1 = assignTo.value;
-    const dueDate1 = DueDate.value;
-    if(taskName1 === '' || taskName1 === null){
-        errorMessages.push("Please enter task name")
+    
+    if(taskName.value === '' || taskName.value === null){
+        nameSpan.innerHTML = "Please enter task name"   
+    }else if(description.value === '' || description.value === null){
+      discSpan.innerHTML = "Please enter description"
+    }else if(assignTo.value === '' || assignTo.value === null){
+        assignSpan.innerHTML="Please enter assign to"
+    }else if(dueDate.value === '' || dueDate.value === null){
+        dateSpan.innerHTML = "Please enter date"
     }
-    if(description1 === '' || description1 === null){
-        errorMessages.push("Please write task description")
-    }
-    if(assignTo1 === '' || assignTo1 === null){
-        errorMessages.push("Please enter assign to")
-    }
-    if(dueDate1 === '' || dueDate1 === null){
-        errorMessages.push("Please select due date")
-    }
-    if(errorMessages.length > 0){
-        let output = '';
-        for(let i =0; i<errorMessages.length; i++){
-            output += errorMessages[i]+'\n';
-        }
-       alert(output)
-    }
+   
 }
-
-
-
-
