@@ -19,7 +19,7 @@
     <title>Final Project</title>
   </head>
 
-  <body>
+  <body onload="displayTasks()">
     <div class="container">
       <main class="p-3 mb-2 bg-info text-white">
         <!-- Task header  -->
@@ -30,79 +30,69 @@
         <!-- Task list  -->
         <div id="mBox"></div>
         <div class="form-group col-md-4">
-          <label for="taskName">Task Name </label>
+          <label for="task_name">Task Name </label>
           <input
             type="text"
-            name="taskName"
+            name="task_name"
             class="form-control"
-            id="taskName"
+            id="task_name"
           />
-          <span id="name-span" style="color: rgb(129, 40, 102)"></span>
+          <span id="name-span" style="color: red"></span>
         </div>
         <div class="form-group col-md-4">
           <label for="description">Description:</label>
-          <textarea id="description" name="description" cols="45"></textarea>
+          <textarea
+            type="text"
+            id="description"
+            name="description"
+            cols="45"
+          ></textarea>
         </div>
-        <span id="dsc-span" style="color: rgb(129, 40, 102)"></span>
+        <span id="dsc-span" style="color: red"></span>
         <div class="row">
           <div class="form-group col-md-4">
-            <label for="assignTo">Assign to</label>
+            <label for="assign_to">Assign to</label>
             <input
               type="text"
-              name="assignTo"
+              name="assign_to"
               class="form-control"
-              id="assignTo"
+              id="assign_to"
             />
-            <span id="asign-span" style="color: rgb(129, 40, 102)"></span>
+            <span id="asign-span" style="color: red"></span>
           </div>
 
           <div class="form-group col-md-2"></div>
 
           <div class="form-group col-md-3">
-            <label for="date">Due Date</label>
+            <label for="due_date">Due Date</label>
             <input
               type="date"
-              name="dueDate"
+              name="due_date"
               class="form-control"
-              id="dueDate"
+              id="due_date"
               placeholder="MM/DD/YYYY"
             />
-            <span id="date-span" style="color:rgb(129, 40, 102)"></span>
+            <span id="date-span" style="color: red"></span>
           </div>
         </div>
         <div class="form-group col-md-3">
           <button
-            type="submit"
+            type="button"
             onclick="validFormFieldInput()"
             class="btn btn-secondary"
           >
             Add Tasks
           </button>
-
         </div>
-       
+
         <!-- card list group  -->
 
         <div class="list-group">
           <div>
             <h5>Tasks</h5>
           </div>
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-5">
-                  <p>Name</p>
-                </div>
-                <div class="col-md-1">
-                  <button type="button" class="btn btn-success">Status</button>
-                </div>
-              </div>
-              <p>Description</p>
-              <p>AssignedTo</p>
-              <p>DueDate</p>
-              <p>Status</p>
-            </div>
-          </div>
+
+          <div id="task_card"></div>
         </div>
       </main>
     </div>
