@@ -97,7 +97,7 @@ const createTaskHtml = (id, name, desc, assign, due, stat) => {
       }
   
   
-      //  Save this.tasks and this.currentId into JSON strings
+      /*  Save this.tasks and this.currentId into JSON strings
       save() {
         const tasksJson = JSON.stringify(this.tasks);
         localStorage.setItem('tasks', tasksJson);
@@ -116,7 +116,7 @@ const createTaskHtml = (id, name, desc, assign, due, stat) => {
           const currentId = localStorage.getItem('currentId');
           this.currentId = Number(currentId);
         }
-      }
+      } */
   
   
       //  Delete a task from the list
